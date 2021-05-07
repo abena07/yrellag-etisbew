@@ -30,3 +30,7 @@ footer{
      padding: 5px;
      border-radius: 5px;
  }
+ div container{
+   max-width: 960px;
+   padding: 30px;
+ }
