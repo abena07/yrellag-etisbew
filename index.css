@@ -31,10 +31,13 @@ footer{
      border-radius: 5px;
  }
  #container{
-     display: grid;
-     grid-template-columns: repeat( 3, 1fr);
-   max-width: 960px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows:repeat( 3, minmax(200px, auto));
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    max-width: 960px;
+    /* margin: 0 auto; */
  }
  #container div{
      /* padding :30px */
