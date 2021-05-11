@@ -34,13 +34,62 @@ footer{
  #container{
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
-    grid-template-rows:repeat( 3, minmax(200px, auto));
+    grid-template-rows:repeat( 3, minmax(100px, auto));
     grid-column-gap:10px;
     grid-row-gap:10px;
     max-width: 960px;
     /* margin: 0 auto; */
  }
+ @media screen and(min-width:760px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows:repeat( 3, minmax(100px, auto));
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+        max-width: 960px;
+        /* margin: 0 auto; */
+     }
+ }
+ 
+ #container div{
+    padding: 20px;
+ }
 
+            /* .one{
+                grid-area: one;
+            }
+            .two{
+                grid-area: two;
+            }
+            .three{
+                grid-area: three;
+            }
+            .four{
+                grid-area: four;
+            }
+            .five{
+                grid-area: five;
+            }
+            .six{
+                grid-area: six;
+            }
+            .seven{
+            grid-area: seven;
+            }
+            .eight{
+            grid-area: eight;
+            }
+            .nine{
+            grid-area: nine
+            }
+            .ten{
+            grid-area: ten;
+            } */
+
+/* .eleven{
+    grid-area: eleven;
+ } */
  .eight{
      grid-column:1/2;
      grid-row: 3;
