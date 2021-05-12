@@ -56,7 +56,7 @@ footer{
     padding: 20px;
  }
 
-            .one{
+            /* .one{
                 grid-area: one;
             }
             .two{
@@ -89,7 +89,7 @@ footer{
 
 /* .eleven{
     grid-area: eleven;
- }
+ } */
  .eight{
      grid-column:1/2;
      grid-row: 3;
