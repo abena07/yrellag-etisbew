@@ -1,0 +1,99 @@
+XML SOURCE CODE
+<Entertainment>
+ <music>
+ <Artist>
+ <name>Stonebowy</name>
+ <name>Sarkodie</name>
+ </Artist>
+ <Genre>
+ <name>Dance Hall</name>
+ <name>Rapper</name>
+ </Genre>
+ <Record_label>
+ <name>Zylofon Music</name>
+ <name>Sarkcess Music</name>
+ </Record_label>
+ </music>
+ <Movies>
+ <Category>
+ <Drama>
+ <Title>
+ <name>The Drunkard</name>
+ <name>The Pregnant Virgin</name>
+ </Title>
+ <Cast>
+ <name>Aja koo</name>
+ <name>Ama Ghana</name>
+ </Cast>
+ <Year>
+ <name>2018</name>
+ <name>2015</name>
+ </Year>
+ </Drama>
+ <Action>
+ <Location>
+ <name>United State</name>
+ <name>China</name>
+ </Location>
+ <Direction>
+ <name>Grantt Doe</name>
+ <name>Chinsing Shua</name>
+ </Direction>
+ <Sales>
+ <name>$5000</name>
+ <name>$12000</name>
+ </Sales>
+ </Action>
+ </Category>
+ </Movies>
+</Entertainment>
+DTD SOURCE CODE
+<?xml encoding="UTF-8"?>
+<!ELEMENT Entertainment (music,Movies)>
+<!ATTLIST Entertainment
+ xmlns CDATA #FIXED ''>
+<!ELEMENT music (Artist,Genre,Record_label)>
+<!ATTLIST music
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Movies (Category)>
+<!ATTLIST Movies
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Artist (name)+>
+<!ATTLIST Artist
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Genre (name)+>
+<!ATTLIST Genre
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Record_label (name)+>
+<!ATTLIST Record_label
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Category (Drama,Action)>
+<!ATTLIST Category
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Drama (Title,Cast,Year)>
+<!ATTLIST Drama
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Action (Location,Direction,Sales)>
+<!ATTLIST Action
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Title (name)+>
+<!ATTLIST Title
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Cast (name)+>
+<!ATTLIST Cast
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Year (name)+>
+<!ATTLIST Year
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Location (name)+>
+<!ATTLIST Location
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Direction (name)+>
+<!ATTLIST Direction
+ xmlns CDATA #FIXED ''>
+<!ELEMENT Sales (name)+>
+<!ATTLIST Sales
+ xmlns CDATA #FIXED ''>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+ xmlns CDATA #FIXED ''>
